@@ -8,5 +8,6 @@ let
       inherit targetArch;
       builderArch = builtins.currentSystem;
     };
+    legacy_ = import ./legacy_.nix a;
   };
 in a
